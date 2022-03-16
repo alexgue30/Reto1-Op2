@@ -1,20 +1,153 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: Arial;
-}
-
-header{
-    padding:20px;
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
 }
 
 h1{
-    color:rgb(23, 192, 243);
     text-align:center;
+    font-family:sans-serif;
     font-size:50px;
-    font-family:Lucida Sans;
+    color:rgb(23, 192, 243);
+    margin:20px 0px;
+}
+
+section{
+    width:80%;
+    margin:auto;
+}
+
+.flex-container{
+    display:flex;
+    justify-content:center;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.flex-form{
+    margin:0px 50px;
+}
+
+#form-1{
+    width:450px;
+    padding: 0px 0px 0px 60px;
+    background:rgb(243, 242, 242);
+    border-bottom:20px;
+    border-radius:8px;
+}
+
+
+#form-2{
+    width:450px;
+    background:rgb(221, 239, 247);
+    padding-left:20px;
+    border-radius:8px;
+}
+
+h2{
+    padding:20px 0px;
+    font-size:26px;
+    font-weight:bold;
+    font-family:sans-serif;
+}
+
+h3{
+    text-align:center;
+    font-weight:900;
+    padding:30px 0px 20px 0px;
+    font-family:Segoe UI;
+}
+
+label{
+    font-weight: 900;
+    font-size:15px;
+}
+
+.label{
+    font-weight: 900;
+    font-size:15px;
+    padding-left:10px;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+    width:95%;
+    height:40px;
+    margin-bottom:20px;
+    border:2px solid rgb(219, 219, 219);
+    border-radius:5px;
+}
+
+#form-1 textarea{
+    width:95%;
+    margin-bottom:20px;
+    border:2px solid rgb(219, 219, 219);
+}
+
+#form-2 textarea{
+    width:95%;
+    margin-bottom:10px;
+    padding-top:10px;
+    border:2px solid rgb(219, 219, 219);
+}
+
+input[type="radio"]{
+    width:15px;
+    height:15px;
+    margin:10px 5px 20px 0px;
+    border:2px solid rgb(219, 219, 219);
+}
+
+select{
+    width:80%;
+    height:40px;
+    margin-top:5px;
+    margin-bottom:20px;
+    font-size:16px;
+    font-weight: bold;
+    border:2px solid rgb(219, 219, 219);
+    border-radius:8px;
+}
+
+option{
+    padding:10px;
+}
+
+#form-1 input[type="submit"]{
+    margin-top:20px;
+    margin-bottom:30px;
+    width:90px;
+    height:40px;
+    background:rgb(31, 119, 179);
+    color:white;
+    border:0px;
+    font-size:17px;
+}
+
+#form-2 input[type="submit"]{
+    width:90px;
+    height:40px;
+    background:rgb(130, 215, 255);
+    color:white;
+    border:0px;
+    border-radius:4px;
+    font-size:17px;
+    margin-bottom:15px;
+    font-weight:200;
+}
+
+#form-2 ::placeholder{
+    padding-left:10px;
+    font-size:17px;
+    font-family:Calibri;
+    font-weight:550;
+}
+
+.submit{
+    text-align:center;
+    display:block;
+    margin-right:40px;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
 }

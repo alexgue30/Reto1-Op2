@@ -2,16 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Registrate Ahora</title>
+    <title>Sing Up - Contact Form</title>
+    <link rel="stylesheet" href="02-estilos.css">
 </head>
 <body>
     <header>
-        <h1>Opción 2</h1>
+        <h1>Opción 2 y Opción 3</h1>
     </header>
     <main>
         <section>
-            
-        </section>
+            <div class="flex-container">
+                <div class="flex-form">
+                    <form action="" id="form-1">
+                        <h2>Sing Up</h2>
+                        <label>First name</label>
+                        <input type="text" required minlength="6">
+                        <br />
+                        <label for="numero">Age</label>
+                        <input type="text" name="numero" required pattern="[0-120]+">
+                        <label for="numero">Income</label>
+                        <input type="text" name="numero" required pattern="[0-15000]+">
+                        <label>More Info</label>
+                        <textarea name="" id="" cols="20" rows="5"></textarea>
+                        <label>Gender</label>
+                        <br />
+                        <input type="radio" name="genero" value="M" id="rmasculino"><label for="rmasculino">Male</label>
+                        <input type="radio" name="genero" value="F" id="rfemenino"><label for="rfemenino">Female</label>
+                        <input type="radio" name="genero" value="T" id="rtrans"><label for="rfemenino">Trans</label>
+                        <br />
+                        <label>Plan</label>
+                        <br />
+                        <select>
+                            <option>Select Plan</option>
+                            <option value="BA">Basic</option>
+                            <option value="SI">Silver</option>
+                            <option value="PLA">Platinium</option>
+                            <option value="GOLD">Gold</option>
+                        </select>
+                        <br />
+                        <input type="checkbox" value="subscripcion"><label>Subscribe to Newsletter</label>
+                        <br />
+                        <input type="submit" value="Update">
+                    </form>
+                </div>
+                <div class="flex-form">
+                    <form action="" id="form-2">
+                        <h3>Contact Form</h3>
+                        <label for="nombre" class="label">First Name</label>
+                        <br />
+                        <input type="text" name="nombre" required minlength="6" placeholder="John">
+                        <br />
+                        <label for="apellido" class="label">Last Name</label>
+                        <br />
+                        <input type="text" name="apellido" required minlength="6" placeholder="Doe">
+                        <br />
+                        <label for="email" class="label">Last Name</label>
+                        <br />
+                        <input type="email" name="email" value     placeholder="you@domain.com" required>
+                        <br />
+                        <label class="label">Message</label>
+                        <br />
+                        <textarea name="" id="" cols="30" rows="15" minlength="20" maxlength="140" placeholder="Enter your message here..." required></textarea>
+                        <br />
+                        <div class="submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section> 
     </main>
 </body>
 </html>
