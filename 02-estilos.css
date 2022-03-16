@@ -151,3 +151,11 @@ option{
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
+
+footer{
+    font-family:Verdana;
+    margin:20px 0px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
